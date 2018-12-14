@@ -18,9 +18,11 @@ V0.1
 
 可能这个项目的代码现在并不是很规范，我会尽力去改正，毕竟我刚接触flutter不久
 
-如果你觉得程序不错，希望能留给star给我
+项目github地址 [https://github.com/ykz200/flutter_sort](https://github.com/ykz200/flutter_sort)
 
-顺便提一下我的博客 http://blog.bhusk.com/
+如果你觉得程序不错，希望能留个star给我
+
+顺便提一下我的博客 [http://blog.bhusk.com/](http://blog.bhusk.com/)
 
 程序员是个辛苦的职业
 

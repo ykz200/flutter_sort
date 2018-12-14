@@ -1,5 +1,5 @@
 name: flutter_sort
-description:
+description: 一个用Flutter 编写的十大经典排序算法 包含效果演示的app
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sort/page/bubbleSort.dart';
+import 'package:flutter_sort/page/sort/listSort.dart';
+ import 'package:flutter_sort/model/SortValueModel.dart';
 import 'package:flutter_sort/page/author/author.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
@@ -35,21 +36,67 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            new ListTile(   //第一个功能项
+            new ListTile(
                 title: new Text('冒泡排序'),
-                 onTap: () {
+                onTap: () {
                   Navigator.of(context).pop();
-                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new BubbleSortPage(title: '冒泡排序 Bubble Sort')));
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:bubbleSort_title ,value: bubbleSort_value,)));
+                }
+            ),new ListTile(
+                title: new Text('选择排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:selection_title ,value: selection_value,)));
+                }
+            ),new ListTile(
+                title: new Text('插入排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Insertion_title ,value: Insertion_value,)));
+                }
+            ),new ListTile(
+                title: new Text('希尔排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Shell_title ,value: Shell_value,)));
+                }
+            ),new ListTile(
+                title: new Text('归并排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Merge_title ,value: Merge_value,)));
+                }
+            ),new ListTile(
+                title: new Text('快速排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Quick_title ,value: Quick_value,)));
+                }
+            ),new ListTile(
+                title: new Text('堆排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Heap_title ,value: Heap_value,)));
+                }
+            ),new ListTile(
+                title: new Text('计数排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Counting_title ,value: Counting_value,)));
+                }
+            ),new ListTile(
+                title: new Text('桶排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Bucket_title ,value: Bucket_value,)));
+                }
+            ),new ListTile(
+                title: new Text('基数排序'),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new ListSortPage(title:Radix_title ,value: Radix_value,)));
                 }
             ),
-            new ListTile(   //第一个功能项
-                title: new Text('未完待续'),
-                 onTap: () {
-                  Navigator.of(context).pop();
-
-                }
-            ),
-
             new ListTile(   //第二个功能项
                 title: new Text('关于程序'),
                  onTap: () {
