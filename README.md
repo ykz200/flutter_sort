@@ -3,6 +3,10 @@
 
 - Flutter 编写的十大经典排序算法 包含效果演示
 
+## 程序
+Android下周地址 [https://github.com/ykz200/flutter_sort/releases/download/0.1/flutterSort.apk](https://github.com/ykz200/flutter_sort/releases/download/0.1/flutterSort.apk)
+
+
 ## version
 ```
 V0.1
