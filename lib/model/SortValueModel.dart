@@ -181,35 +181,19 @@ const Merge_value = """
 
 ####  代码实现
 ```
-function mergeSort(arr) {  // 采用自上而下的递归方法
-    var len = arr.length;
-    if (len < 2) {
-        return arr;
-    }
-    var middle = Math.floor(len / 2),
-        left = arr.slice(0, middle),
-        right = arr.slice(middle);
-    return merge(mergeSort(left), mergeSort(right));
-}
- 
-function merge(left, right) {
-    var result = [];
- 
-    while (left.length>0 && right.length>0) {
-        if (left[0] <= right[0]) {
-            result.push(left.shift());
-        } else {
-            result.push(right.shift());
+void shellSort(vector<int> &nums) {
+    int n = nums.size();
+    int gap, i, j;
+     
+    for(gap = n/2; gap > 0; gap /= 2) {
+        //插入排序简洁写法
+        for(i = gap; i < n; i++) {
+            int num = nums[i];
+            for(j = i-gap; j>=0 && nums[j]>num; j-=gap)
+                nums[j+gap] = nums[j];
+            nums[j+gap] = num;
         }
     }
- 
-    while (left.length)
-        result.push(left.shift());
- 
-    while (right.length)
-        result.push(right.shift());
- 
-    return result;
 }
 ```
 ####  算法分析
