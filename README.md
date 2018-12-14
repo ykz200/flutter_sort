@@ -6,6 +6,9 @@
 ## 程序
 Android apk下载地址 [https://github.com/ykz200/flutter_sort/releases/download/0.1/flutterSort.apk](https://github.com/ykz200/flutter_sort/releases/download/0.1/flutterSort.apk)
 
+## 预览 
+
+![https://github.com/ykz200/flutter_sort/blob/master/pik42-mpfr7.gif](https://github.com/ykz200/flutter_sort/blob/master/pik42-mpfr7.gif)
 
 ## version
 ```
